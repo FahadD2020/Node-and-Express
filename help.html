@@ -1,0 +1,38 @@
+<table>
+    <tr>
+        <th>Method</th>
+        <th>Path</th>
+        <th>Example</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>GET</td>
+        <td>/Users</td>
+        <td>/Users</td>
+        <td>GET all users in response.</td>
+    </tr>
+    <tr>
+        <td>POST</td>
+        <td>/Users</td>
+        <td>Not applicable</td>
+        <td>Submit button on /Users does a POST. Return the created entity or 400 on bad request.</td>
+    </tr>
+    <tr>
+        <td>GET</td>
+        <td>/Users/{userId}</td>
+        <td>/Users/12</td>
+        <td>Find and return the user with given Id. 404 if not found</td>
+    </tr>
+    <tr>
+        <td>PATCH</td>
+        <td>/Users/{userId}</td>
+        <td>/Users/12</td>
+        <td>Allow to update data (except ID) of an existing user. Returns 404 if user not found.</td>
+    </tr>
+    <tr>
+        <td>DELETE</td>
+        <td>/Users/{userId}</td>
+        <td>/Users/12</td>
+        <td>Delete the user with given ID. Returns 404 if user not found.</td>
+    </tr>
+</table>
